@@ -1,0 +1,68 @@
+/**************************\
+    PLANO
+\**************************/
+.plano {
+    padding: 10px;
+    border: 1px solid #95a4a5;
+}
+
+.plano__cabecalho {
+    margin: -10px;
+    margin-bottom: 0px;
+
+    background-color: #95a4a5;
+    color: #ffF;
+    
+    text-align: center;
+    line-height: 2.5;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.plano__preco {
+    margin: 20px;
+    
+    text-align: center;
+    font-size: 20px;
+}
+
+.plano__caracteristicas {
+    padding: 0px;
+    margin: 20px 0;
+    
+    list-style: none;
+}
+
+.plano__caracteristicas >  li {
+    text-align: center;
+}
+
+.plano__rodape {
+    text-align: center;
+}
+
+/**************************\
+    BOTAO
+\**************************/
+
+.botao {
+    display: inline-block;
+    background-color: #bbb;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.botao:hover, .botao:focus {
+    background-color: #aaa;
+    text-decoration: none;
+    color: #fff;
+}
+
+.botao--assinar {
+    background-color: #127d00;
+}
+
+.botao--assinar:hover, .botao--assinar:focus{
+    background-color: #0e6400;
+}
