@@ -10,3 +10,10 @@
 .layout-planos {
     padding: 80px 0;
 }
+
+.layout-chamada{
+    align-items: top;
+    padding: 80px 0;
+
+    background-color: #00ae19;
+}

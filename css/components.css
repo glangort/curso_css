@@ -12,7 +12,7 @@
 
     background-color: #95a4a5;
     color: #ffF;
-    
+
     text-align: center;
     line-height: 2.5;
     font-weight: normal;
@@ -21,7 +21,7 @@
 
 .plano__preco {
     margin: 20px;
-    
+
     text-align: center;
     font-size: 20px;
 }
@@ -29,11 +29,11 @@
 .plano__caracteristicas {
     padding: 0px;
     margin: 20px 0;
-    
+
     list-style: none;
 }
 
-.plano__caracteristicas >  li {
+.plano__caracteristicas>li {
     text-align: center;
 }
 
@@ -53,7 +53,8 @@
     text-decoration: none;
 }
 
-.botao:hover, .botao:focus {
+.botao:hover,
+.botao:focus {
     background-color: #aaa;
     text-decoration: none;
     color: #fff;
@@ -63,6 +64,61 @@
     background-color: #127d00;
 }
 
-.botao--assinar:hover, .botao--assinar:focus{
+.botao--assinar:hover,
+.botao--assinar:focus {
     background-color: #0e6400;
+}
+
+.botao--principal {
+    border-radius: 10px;
+
+    background-color: #004b86;
+}
+
+.botao--principal:hover,
+.botao--principal:focus {
+
+    background-color: #003b6a;
+}
+
+.chamada {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.chamada__titulo {
+    margin: 0;
+
+    color: #fff;
+
+    font-size: 3.375em;
+    line-height: 0.9;
+    text-shadow: 1px 1px #313131;
+}
+
+.chamada__subtitulo {
+    margin: 60px 0;
+
+    color: #fff;
+
+    font-size: 1em;
+}
+
+.chamada__acao {
+    font-size: 1em;
+
+    padding: 40px;
+
+    text-align: center;
+
+    padding-bottom: 0px;
+}
+
+@media(min-width: 992px) {
+    .chamada {
+        padding-left: 10%;
+        padding-right: 10%;
+
+        font-size: 2.2rem;
+    }
 }
