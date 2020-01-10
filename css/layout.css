@@ -1,14 +1,10 @@
-.layout-cabecalho    {
+.layout-cabecalho {
     border-bottom: 1px solid #ccc;
     height: 60px;
 }
 
-.layout-cabecalho img {
-    margin-top: 12px;
-}
-
-.layout-cabecalho--home{
-    background-color: yellow;
+.layout-cabecalho--home {
+    background-color: #FFF;
     position: fixed;
 
     right: 0;
@@ -22,7 +18,7 @@
     padding: 80px 0;
 }
 
-.layout-chamada{
+.layout-chamada {
     /* align-items: top; */
 
     margin-top: 60px;
@@ -31,7 +27,7 @@
     background-color: #00ae19;
 }
 
-.layout-depoimento{
+.layout-depoimento {
     padding: 80px 0;
     background-color: #e7e7e7;
 }
@@ -41,10 +37,16 @@
     
 } */
 
-.layout-rodape{
+.layout-rodape {
     text-align: center;
     padding: 40px 0px;
 
     background-color: #484848;
     color: #ffF;
+}
+
+@media(max-width: 749px) {
+    .layout-planos .row>div:not(.ultima-coluna) {
+        margin-bottom: 40px;
+    }
 }

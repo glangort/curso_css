@@ -4,9 +4,13 @@
 .plano {
     padding: 10px;
     border: 1px solid #95a4a5;
+
+    position: relative;
 }
 
 .plano__cabecalho {
+
+
     margin: -10px;
     margin-bottom: 0px;
 
@@ -17,6 +21,27 @@
     line-height: 2.5;
     font-weight: normal;
     font-size: 28px;
+}
+
+.plano--mais--polular::after {
+    position: absolute;
+    z-index: 9999;
+    top: -10px;
+    left: -10px;
+
+    content: "MAIS POLULAR";
+
+    padding: 0 10px;
+
+    background-color: #C20303;
+    color: #FFF;
+    font-size: .7142em;
+    font-weight: bold;
+    line-height: 2.5;
+
+
+
+
 }
 
 .plano__preco {
@@ -47,9 +72,13 @@
 
 .botao {
     display: inline-block;
+    padding: 0.8em 1.2em;
+
     background-color: #bbb;
     color: #fff;
-    padding: 12px 16px;
+
+    line-height: normal;
+    font-size: 1em;
     text-decoration: none;
 }
 
@@ -60,12 +89,15 @@
     color: #fff;
 }
 
-.botao--assinar {
+.botao--assinar,
+.botao--login {
     background-color: #127d00;
 }
 
 .botao--assinar:hover,
-.botao--assinar:focus {
+.botao--assinar:focus,
+.botao--login:hover,
+.botao--login:focus {
     background-color: #0e6400;
 }
 
@@ -79,6 +111,12 @@
 .botao--principal:focus {
 
     background-color: #003b6a;
+}
+
+@media(min-width: 992px){
+	.botao-chaveador{
+		display: none;
+	}
 }
 
 .chamada {
@@ -163,11 +201,13 @@
 \**************************/
 
 .depoimento {
+
+
     font-size: 2.2em;
 }
 
-@media(min-width: 992px){
-    .depoimento{
+@media(min-width: 992px) {
+    .depoimento {
         padding-left: 10%;
         padding-right: 10%;
 
@@ -177,6 +217,7 @@
 }
 
 .depoimento>blockquote {
+    position: relative;
     margin: 0;
     padding: 0 60px;
 
@@ -185,17 +226,116 @@
 
 }
 
-.depoimento-autor{
+.depoimento-autor {
     margin-top: 40px;
 
     text-align: center;
     font-size: 0.8181em;
 }
 
-.depoimento-autor > img{
+.depoimento-autor>img {
     border-radius: 50%;
 }
 
-.depoimento-autor > p {
+.depoimento-autor>p {
     margin-top: 10px;
-} 
+}
+
+.depoimento>blockquote::before {
+    position: absolute;
+    left: -0.10em;
+    top: -0.43em;
+
+    color: #CCC;
+
+    content: "\201C";
+
+    font-size: 8em;
+
+
+
+
+}
+
+/**************************\
+    NAVEGACAO
+\**************************/
+.navegacao {
+    margin-top: 12px;
+}
+
+.navegacao__menu {
+    float: right;
+}
+
+/**************************\
+    BOTAO CHAVEADOR
+\**************************/
+
+.botao-chaveador {
+    width: 24px;
+    height: 24px;
+    border: 0;
+
+    background: none;
+    background-image: url("../images/bars.png");
+}
+
+/**************************\
+    MENU
+\**************************/
+
+.menu {
+    margin: 0;
+
+    font-size: 1.4rem;
+
+    
+
+    list-style: none;
+}
+
+@media(max-width: 991px) {
+
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+    
+        display: none;
+        width: 200px;   
+        padding: 20px;
+        border-right: 1px solid #eee;
+
+        background-color: #fbfbfb;
+    }
+
+    .menu--exibindo{
+        display: block;
+    }
+
+    .menu__item {
+        display: block;
+
+        line-height: 3;
+    }
+
+    .menu__item--botao {
+        margin-top: 20px;
+    }
+}
+
+@media(min-width: 991px) {
+    .menu__item{
+        display: inline-block;
+
+        padding-right: 20px;
+
+    }
+
+    .menu__item:last-of-type {
+        padding-right: 0px;
+    }
+
+}

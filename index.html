@@ -18,7 +18,29 @@
 
     <header class="layout-cabecalho layout-cabecalho--home">
         <div class="container">
-            <img src="images/logo.png" width="100" height="35" alt="MyPilas">
+
+            <nav class="navegacao">
+                <img src="images/logo.png" width="100" height="35" alt="MyPilas">
+
+                <div class="navegacao__menu">
+                    <button class="botao-chaveador js-chaveador"></button>
+
+                    <ul class="menu js-menu">
+                        <li class="menu__item">
+                            <a href="#">Como Funciona</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#planos">Planos e Preços</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#">Contato</a>
+                        </li>
+                        <li class="menu__item menu__item--botao">
+                            <a class="botao botao--login" href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -26,7 +48,8 @@
         <div class="container">
             <div class="chamada">
                 <h1 class="chamada__titulo">As finanças da sua empresa em ordem</h1>
-                <p class="chamada__subtitulo">Você veja, eu já vi, parei de ver. Voltei a ver, e acho que o Neymar e o Ganso têm essa capacidade de fazer a gente olhar.
+                <p class="chamada__subtitulo">Você veja, eu já vi, parei de ver. Voltei a ver, e acho que o Neymar e o
+                    Ganso têm essa capacidade de fazer a gente olhar.
                 </p>
 
                 <div class="chamada__acao">
@@ -49,9 +72,9 @@
                 </blockquote>
 
                 <div class="depoimento-autor">
-                    <img class="foto-depoimento" height="180px" width="180px" src="images/depoiment.png"
+                    <img class="foto-depoimento" height="180px" width="180px" src="images/depoiment.jpg"
                         alt="Joao da Silva">
-                    <p>Rafael Scholant</p>
+                    <p>João da Silva</p>
                 </div>
             </div>
 
@@ -83,7 +106,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <article class="plano">
+                    <article class="plano plano--mais--polular">
                         <h2 class="plano__cabecalho">Micro</h2>
                         <div class="plano__preco">R$89/mes</div>
                         <ul class="plano__caracteristicas">
@@ -101,8 +124,10 @@
                     </article>
                 </div>
 
-                <div class="col-md-4">
-                    <article class="plano">
+
+
+                <div class="col-md-4 ultima-coluna">
+                    <article class="plano ">
                         <h2 class="plano__cabecalho">Pequena</h2>
                         <div class="plano__preco">R$99/mes</div>
                         <ul class="plano__caracteristicas">
@@ -131,6 +156,7 @@
 
 </body>
 
+<script src="javascript/app.js"></script>
 
 
 </html>
